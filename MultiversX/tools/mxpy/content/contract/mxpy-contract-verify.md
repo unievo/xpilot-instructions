@@ -5,7 +5,7 @@ Verify the authenticity of the code of a deployed Smart Contract.
 ## Usage
 
 ```bash
-mxpy contract verify [contract address] --packaged-src [JSON file] [options]
+mxpy contract verify [contract] --packaged-src PACKAGED_SRC [options]
 ```
 
 ## Parameters
@@ -25,6 +25,9 @@ mxpy contract verify [contract address] --packaged-src [JSON file] [options]
 - `--contract-variant CONTRACT_VARIANT`  
   In case of a multicontract, specify the contract variant you want to verify.
 
+- `--sender SENDER`  
+  The alias of the wallet set in the address config.
+
 - `--pem PEM`  
   The PEM file, if keyfile not provided.
 
@@ -32,7 +35,7 @@ mxpy contract verify [contract address] --packaged-src [JSON file] [options]
   A JSON keyfile, if PEM not provided.
 
 - `--passfile PASSFILE`  
-  A file containing keyfile's password, if keyfile provided. If not provided, you'll be prompted to enter the password.
+  DEPRECATED. Do not use. You'll be prompted to enter the password.
 
 - `--ledger`  
   Bool flag for signing transaction using ledger.

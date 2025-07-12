@@ -1,21 +1,19 @@
 # mxpy config get
 
-Gets a configuration value.
+Gets a configuration value from the active configuration.
 
 ## Usage
 
 ```bash
-mxpy config get [name]
+mxpy config get name
 ```
 
 ## Parameters
 
-- `name` (string)  
+- `name`  
   The name of the configuration entry.
-- `-h, --help`  
-  Show help message and exit.
 
 ## Example
 
 ```bash
-mxpy config get proxy
+mxpy config get config_name

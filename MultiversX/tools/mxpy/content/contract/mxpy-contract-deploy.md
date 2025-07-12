@@ -5,7 +5,7 @@ Deploy a Smart Contract.
 ## Usage
 
 ```bash
-mxpy contract deploy --bytecode [WASM file] --abi [ABI file] [options]
+mxpy contract deploy --bytecode BYTECODE --abi ABI [options]
 ```
 
 ## Parameters
@@ -31,6 +31,9 @@ mxpy contract deploy --bytecode [WASM file] --abi [ABI file] [options]
 - `--outfile OUTFILE`  
   Where to save the output (default: stdout).
 
+- `--sender SENDER`  
+  The alias of the wallet set in the address config.
+
 - `--pem PEM`  
   The PEM file, if keyfile not provided.
 
@@ -38,7 +41,7 @@ mxpy contract deploy --bytecode [WASM file] --abi [ABI file] [options]
   A JSON keyfile, if PEM not provided.
 
 - `--passfile PASSFILE`  
-  A file containing keyfile's password, if keyfile provided. If not provided, you'll be prompted to enter the password.
+  DEPRECATED. Do not use. You'll be prompted to enter the password.
 
 - `--ledger`  
   Bool flag for signing transaction using ledger.
@@ -113,7 +116,7 @@ mxpy contract deploy --bytecode [WASM file] --abi [ABI file] [options]
   A JSON keyfile, if PEM not provided.
 
 - `--guardian-passfile GUARDIAN_PASSFILE`  
-  A file containing keyfile's password, if keyfile provided. If not provided, you'll be prompted to enter the password.
+  DEPRECATED. Do not use. You'll be prompted to enter the password.
 
 - `--guardian-ledger`  
   Bool flag for signing transaction using ledger.
@@ -128,7 +131,7 @@ mxpy contract deploy --bytecode [WASM file] --abi [ABI file] [options]
   A JSON keyfile, if PEM not provided.
 
 - `--relayer-passfile RELAYER_PASSFILE`  
-  A file containing keyfile's password, if keyfile provided. If not provided, you'll be prompted to enter the password.
+  DEPRECATED. Do not use. You'll be prompted to enter the password.
 
 - `--relayer-ledger`  
   Bool flag for signing transaction using ledger.
@@ -155,3 +158,5 @@ Deploy a contract with bytecode and ABI:
 
 ```bash
 mxpy contract deploy --bytecode mycontract.wasm --abi mycontract.abi.json --pem wallet.pem --proxy https://devnet-gateway.multiversx.com --gas-limit 50000000 --send --wait-result
+```
+

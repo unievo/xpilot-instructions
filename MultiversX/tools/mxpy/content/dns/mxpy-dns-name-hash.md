@@ -5,7 +5,7 @@ The hash of a name, as computed by a DNS smart contract.
 ## Usage
 
 ```bash
-mxpy dns name-hash [name]
+mxpy dns name-hash name
 ```
 
 ## Parameters

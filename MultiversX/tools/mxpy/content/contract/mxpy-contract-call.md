@@ -5,7 +5,7 @@ Interact with a Smart Contract (execute function).
 ## Usage
 
 ```bash
-mxpy contract call [contract address] --function [function] [options]
+mxpy contract call [contract] --function FUNCTION [options]
 ```
 
 ## Parameters
@@ -19,6 +19,9 @@ mxpy contract call [contract address] --function [function] [options]
 - `--outfile OUTFILE`  
   Where to save the output (default: stdout).
 
+- `--sender SENDER`  
+  The alias of the wallet set in the address config.
+
 - `--pem PEM`  
   The PEM file, if keyfile not provided.
 
@@ -26,7 +29,7 @@ mxpy contract call [contract address] --function [function] [options]
   A JSON keyfile, if PEM not provided.
 
 - `--passfile PASSFILE`  
-  A file containing keyfile's password, if keyfile provided. If not provided, you'll be prompted to enter the password.
+  DEPRECATED. Do not use. You'll be prompted to enter the password.
 
 - `--ledger`  
   Bool flag for signing transaction using ledger.
@@ -107,7 +110,7 @@ mxpy contract call [contract address] --function [function] [options]
   A JSON keyfile, if PEM not provided.
 
 - `--guardian-passfile GUARDIAN_PASSFILE`  
-  A file containing keyfile's password, if keyfile provided. If not provided, you'll be prompted to enter the password.
+  DEPRECATED. Do not use. You'll be prompted to enter the password.
 
 - `--guardian-ledger`  
   Bool flag for signing transaction using ledger.
@@ -122,7 +125,7 @@ mxpy contract call [contract address] --function [function] [options]
   A JSON keyfile, if PEM not provided.
 
 - `--relayer-passfile RELAYER_PASSFILE`  
-  A file containing keyfile's password, if keyfile provided. If not provided, you'll be prompted to enter the password.
+  DEPRECATED. Do not use. You'll be prompted to enter the password.
 
 - `--relayer-ledger`  
   Bool flag for signing transaction using ledger.
@@ -133,15 +136,14 @@ mxpy contract call [contract address] --function [function] [options]
 - `-h, --help`  
   Show help message and exit.
 
-
 ## Rules:
 - Use --simulate with --gas-limit=600000000 to obtain an estimation of the gas limit (look for "txGasUnits": in the simulation "cost" result)
 - If the transaction fails with not enough gas error, and already used --simulate to have an estimation for the gas limit, use a 2X on the last used gas limit. 
-
 
 ## Example
 
 Call a function on a smart contract:
 
 ```bash
-mxpy contract call {contract_address} --function myFunction --arguments 42 "hello" --pem wallet.pem --gas-limit 50000000 --send --wait-result
+mxpy contract call {contract} --function myFunction --arguments 42 "hello" --pem wallet.pem --gas-limit 50000000 --send --wait-result
+```

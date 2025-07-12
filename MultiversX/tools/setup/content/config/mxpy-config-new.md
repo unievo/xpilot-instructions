@@ -1,23 +1,23 @@
 # mxpy config new
 
-Creates a new configuration.
+Creates a new configuration and sets it as the active configuration.
 
 ## Usage
 
 ```bash
-mxpy config new [name] [options]
+mxpy config new name [--template TEMPLATE]
 ```
 
 ## Parameters
 
-- `name` (string)  
+- `name`  
   The name of the configuration entry.
+
 - `--template TEMPLATE`  
   Template from which to create the new config.
-- `-h, --help`  
-  Show help message and exit.
 
 ## Example
 
 ```bash
-mxpy config new testnet --template mainnet
+mxpy config new devnet
+mxpy config new testnet --template default

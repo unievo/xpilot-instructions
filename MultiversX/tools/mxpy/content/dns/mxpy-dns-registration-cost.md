@@ -5,17 +5,19 @@ Gets the registration cost from a DNS smart contract, by default the one with sh
 ## Usage
 
 ```bash
-mxpy dns registration-cost [options]
+mxpy dns registration-cost [--shard-id SHARD_ID] [--proxy PROXY]
 ```
 
 ## Parameters
 
 - `--shard-id SHARD_ID`  
   Shard id of the contract to call (default: 0).
+
 - `--proxy PROXY`  
-  The URL of the proxy.
+  URL of the proxy.
 
 ## Example
 
 ```bash
-mxpy dns registration-cost --shard-id 0 --proxy https://devnet-api.multiversx.com
+mxpy dns registration-cost
+mxpy dns registration-cost --shard-id 1 --proxy https://gateway.multiversx.com

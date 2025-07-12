@@ -1,21 +1,20 @@
 # mxpy config dump
 
-Dumps the current configuration.
+Dumps the active configuration.
 
 ## Usage
 
 ```bash
-mxpy config dump [options]
+mxpy config dump [--defaults]
 ```
 
 ## Parameters
 
-- `-h, --help`  
-  Show help message and exit.
 - `--defaults`  
   Dump defaults instead of local config.
 
 ## Example
 
 ```bash
+mxpy config dump
 mxpy config dump --defaults

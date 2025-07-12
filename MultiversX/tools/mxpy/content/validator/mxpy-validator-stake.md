@@ -12,12 +12,14 @@ mxpy validator stake [options]
 
 - `--proxy PROXY`  
   string, the URL of the proxy
+- `--sender SENDER`  
+  string, the alias of the wallet set in the address config
 - `--pem PEM`  
   string, the PEM file, if keyfile not provided
 - `--keyfile KEYFILE`  
   string, a JSON keyfile, if PEM not provided
 - `--passfile PASSFILE`  
-  string, a file containing keyfile's password, if keyfile provided. If not provided, you'll be prompted to enter the password.
+  DEPRECATED. Do not use. You'll be prompted to enter the password.
 - `--ledger`  
   bool, flag for signing transaction using ledger
 - `--sender-wallet-index SENDER_WALLET_INDEX`  
@@ -28,8 +30,6 @@ mxpy validator stake [options]
   string, the hrp used to convert the address to its bech32 representation
 - `--nonce NONCE`  
   int, the nonce for the transaction. If not provided, is fetched from the network.
-- `--recall-nonce`  
-  bool, whether to recall the nonce when creating the transaction (OBSOLETE)
 - `--gas-price GAS_PRICE`  
   int, the gas price (default: 1000000000)
 - `--gas-limit GAS_LIMIT`  
@@ -61,7 +61,7 @@ mxpy validator stake [options]
 - `--guardian-keyfile GUARDIAN_KEYFILE`  
   string, a JSON keyfile, if PEM not provided
 - `--guardian-passfile GUARDIAN_PASSFILE`  
-  string, a file containing keyfile's password, if keyfile provided. If not provided, you'll be prompted to enter the password.
+  DEPRECATED. Do not use. You'll be prompted to enter the password.
 - `--guardian-ledger`  
   bool, flag for signing transaction using ledger
 - `--guardian-wallet-index GUARDIAN_WALLET_INDEX`  
@@ -71,7 +71,7 @@ mxpy validator stake [options]
 - `--relayer-keyfile RELAYER_KEYFILE`  
   string, a JSON keyfile, if PEM not provided
 - `--relayer-passfile RELAYER_PASSFILE`  
-  string, a file containing keyfile's password, if keyfile provided. If not provided, you'll be prompted to enter the password.
+  DEPRECATED. Do not use. You'll be prompted to enter the password.
 - `--relayer-ledger`  
   bool, flag for signing transaction using ledger
 - `--relayer-wallet-index RELAYER_WALLET_INDEX`  

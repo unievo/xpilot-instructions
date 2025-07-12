@@ -5,7 +5,7 @@ Unverify a previously verified Smart Contract.
 ## Usage
 
 ```bash
-mxpy contract unverify [contract address] --code-hash [hash] [options]
+mxpy contract unverify [contract] --code-hash CODE_HASH [options]
 ```
 
 ## Parameters
@@ -19,6 +19,9 @@ mxpy contract unverify [contract address] --code-hash [hash] [options]
 - `--verifier-url VERIFIER_URL`  
   The URL of the service that validates the contract.
 
+- `--sender SENDER`  
+  The alias of the wallet set in the address config.
+
 - `--pem PEM`  
   The PEM file, if keyfile not provided.
 
@@ -26,7 +29,7 @@ mxpy contract unverify [contract address] --code-hash [hash] [options]
   A JSON keyfile, if PEM not provided.
 
 - `--passfile PASSFILE`  
-  A file containing keyfile's password, if keyfile provided. If not provided, you'll be prompted to enter the password.
+  DEPRECATED. Do not use. You'll be prompted to enter the password.
 
 - `--ledger`  
   Bool flag for signing transaction using ledger.

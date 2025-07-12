@@ -5,15 +5,16 @@ Erase the currently configured localnet (must be already stopped).
 ## Usage
 
 ```bash
-mxpy localnet clean [options]
+mxpy localnet clean [--configfile CONFIGFILE]
 ```
 
 ## Parameters
 
 - `--configfile CONFIGFILE`  
-  (string) Optional configuration file describing the localnet.
+  Optional configuration file describing the localnet.
 
 ## Example
 
 ```bash
-mxpy localnet clean --configfile my-localnet-config.toml
+mxpy localnet clean
+mxpy localnet clean --configfile localnet-config.json

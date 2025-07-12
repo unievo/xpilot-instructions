@@ -1,23 +1,22 @@
 # mxpy config set
 
-Sets a configuration value.
+Sets a configuration value for the active configuration.
 
 ## Usage
 
 ```bash
-mxpy config set [name] [value]
+mxpy config set name value
 ```
 
 ## Parameters
 
-- `name` (string)  
+- `name`  
   The name of the configuration entry.
-- `value` (string)  
-  The new value to set.
-- `-h, --help`  
-  Show help message and exit.
+
+- `value`  
+  The new value.
 
 ## Example
 
 ```bash
-mxpy config set proxy https://api.multiversx.com
+mxpy config set proxy https://gateway.multiversx.com

@@ -12,10 +12,13 @@ mxpy data store --key KEY --value VALUE [--partition PARTITION] [--use-global]
 
 - `--key KEY`  
   The key.
+
 - `--value VALUE`  
   The value to save.
+
 - `--partition PARTITION`  
   The storage partition (default: *).
+
 - `--use-global`  
   Use the global storage (default: False).
 
@@ -23,3 +26,4 @@ mxpy data store --key KEY --value VALUE [--partition PARTITION] [--use-global]
 
 ```bash
 mxpy data store --key username --value alice --partition users
+mxpy data store --key config --value "enabled" --use-global

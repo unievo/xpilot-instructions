@@ -10,12 +10,14 @@ mxpy tx new [options]
 
 ## Parameters
 
+- `--sender SENDER`  
+  The alias of the wallet set in the address config.
 - `--pem PEM`  
   Path to the PEM file, if keyfile not provided.
 - `--keyfile KEYFILE`  
   Path to a JSON keyfile, if PEM not provided.
 - `--passfile PASSFILE`  
-  Path to a file containing keyfile's password, if keyfile provided. If not provided, you'll be prompted to enter the password.
+  DEPRECATED. Do not use. You'll be prompted to enter the password.
 - `--ledger`  
   Boolean flag for signing transaction using Ledger.
 - `--sender-wallet-index SENDER_WALLET_INDEX`  
@@ -70,7 +72,7 @@ mxpy tx new [options]
 - `--guardian-keyfile GUARDIAN_KEYFILE`  
   JSON keyfile for guardian, if PEM not provided.
 - `--guardian-passfile GUARDIAN_PASSFILE`  
-  File containing guardian keyfile's password, if keyfile provided. If not provided, you'll be prompted to enter the password.
+  DEPRECATED. Do not use. You'll be prompted to enter the password.
 - `--guardian-ledger`  
   Boolean flag for signing transaction using Ledger (guardian).
 - `--guardian-wallet-index GUARDIAN_WALLET_INDEX`  
@@ -80,7 +82,7 @@ mxpy tx new [options]
 - `--relayer-keyfile RELAYER_KEYFILE`  
   JSON keyfile for relayer, if PEM not provided.
 - `--relayer-passfile RELAYER_PASSFILE`  
-  File containing relayer keyfile's password, if keyfile provided. If not provided, you'll be prompted to enter the password.
+  DEPRECATED. Do not use. You'll be prompted to enter the password.
 - `--relayer-ledger`  
   Boolean flag for signing transaction using Ledger (relayer).
 - `--relayer-wallet-index RELAYER_WALLET_INDEX`  
@@ -95,7 +97,6 @@ mxpy tx new [options]
 ## Rules:
 - Start with 50000 gas limit for simple value transfer transactions.
 - For more complex transactions (such as smart contract operations) use --simulate with --gas-limit=600000000 to obtain an estimation of the gas limit (look for "txGasUnits" in the simulation "cost" result).
-
 
 ## Example
 

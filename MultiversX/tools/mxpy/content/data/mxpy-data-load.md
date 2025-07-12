@@ -12,8 +12,10 @@ mxpy data load --key KEY [--partition PARTITION] [--use-global]
 
 - `--key KEY`  
   The key.
+
 - `--partition PARTITION`  
   The storage partition (default: *).
+
 - `--use-global`  
   Use the global storage (default: False).
 
@@ -21,3 +23,4 @@ mxpy data load --key KEY [--partition PARTITION] [--use-global]
 
 ```bash
 mxpy data load --key username --partition users
+mxpy data load --key config --use-global

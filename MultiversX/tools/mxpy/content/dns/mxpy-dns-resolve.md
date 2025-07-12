@@ -5,17 +5,19 @@ Find the address for a name.
 ## Usage
 
 ```bash
-mxpy dns resolve [name] [options]
+mxpy dns resolve name [--proxy PROXY]
 ```
 
 ## Parameters
 
 - `name`  
   The name for which to check.
+
 - `--proxy PROXY`  
-  The URL of the proxy.
+  URL of the proxy.
 
 ## Example
 
 ```bash
-mxpy dns resolve mydomain --proxy https://devnet-api.multiversx.com
+mxpy dns resolve my_name
+mxpy dns resolve my_name --proxy https://gateway.multiversx.com

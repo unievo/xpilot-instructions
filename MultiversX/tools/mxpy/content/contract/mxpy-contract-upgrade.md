@@ -5,7 +5,7 @@ Upgrade a previously-deployed Smart Contract.
 ## Usage
 
 ```bash
-mxpy contract upgrade [contract address] --bytecode [WASM file] [options]
+mxpy contract upgrade [contract] --bytecode BYTECODE [options]
 ```
 
 ## Parameters
@@ -34,6 +34,9 @@ mxpy contract upgrade [contract address] --bytecode [WASM file] [options]
 - `--metadata-payable-by-sc`  
   Mark the contract as payable by SC (default: not payable by SC).
 
+- `--sender SENDER`  
+  The alias of the wallet set in the address config.
+
 - `--pem PEM`  
   The PEM file, if keyfile not provided.
 
@@ -41,7 +44,7 @@ mxpy contract upgrade [contract address] --bytecode [WASM file] [options]
   A JSON keyfile, if PEM not provided.
 
 - `--passfile PASSFILE`  
-  A file containing keyfile's password, if keyfile provided. If not provided, you'll be prompted to enter the password.
+  DEPRECATED. Do not use. You'll be prompted to enter the password.
 
 - `--ledger`  
   Bool flag for signing transaction using ledger.
@@ -60,9 +63,6 @@ mxpy contract upgrade [contract address] --bytecode [WASM file] [options]
 
 - `--nonce NONCE`  
   The nonce for the transaction. If not provided, is fetched from the network.
-
-- `--recall-nonce`  
-  Whether to recall the nonce when creating the transaction (OBSOLETE).
 
 - `--gas-price GAS_PRICE`  
   The gas price (default: 1000000000).
@@ -119,7 +119,7 @@ mxpy contract upgrade [contract address] --bytecode [WASM file] [options]
   A JSON keyfile, if PEM not provided.
 
 - `--guardian-passfile GUARDIAN_PASSFILE`  
-  A file containing keyfile's password, if keyfile provided. If not provided, you'll be prompted to enter the password.
+  DEPRECATED. Do not use. You'll be prompted to enter the password.
 
 - `--guardian-ledger`  
   Bool flag for signing transaction using ledger.
@@ -134,7 +134,7 @@ mxpy contract upgrade [contract address] --bytecode [WASM file] [options]
   A JSON keyfile, if PEM not provided.
 
 - `--relayer-passfile RELAYER_PASSFILE`  
-  A file containing keyfile's password, if keyfile provided. If not provided, you'll be prompted to enter the password.
+  DEPRECATED. Do not use. You'll be prompted to enter the password.
 
 - `--relayer-ledger`  
   Bool flag for signing transaction using ledger.
@@ -152,11 +152,10 @@ mxpy contract upgrade [contract address] --bytecode [WASM file] [options]
 - Even though the transaction state can be successful, the upgrade might still fail due to other reasons, look for "identifier": "internalVMErrors" in the response for failed upgrades.
 - If the transaction fails with not enough gas error, and already used --simulate to have an estimation for the gas limit, use a 2X on the last used gas limit.
 
-
 ## Example
 
 Upgrade a contract with new bytecode:
 
 ```bash
-mxpy contract upgrade {contract_address} --bytecode newcontract.wasm --pem wallet.pem --proxy https://devnet-gateway.multiversx.com --gas-limit 50000000 --send --wait-result
-
+mxpy contract upgrade {contract} --bytecode newcontract.wasm --pem wallet.pem --proxy https://devnet-gateway.multiversx.com --gas-limit 50000000 --send --wait-result
+```

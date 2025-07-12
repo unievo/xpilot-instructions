@@ -5,15 +5,16 @@ Download and verify the prerequisites for running a localnet.
 ## Usage
 
 ```bash
-mxpy localnet prerequisites [options]
+mxpy localnet prerequisites [--configfile CONFIGFILE]
 ```
 
 ## Parameters
 
 - `--configfile CONFIGFILE`  
-  (string) Optional configuration file describing the localnet.
+  Optional configuration file describing the localnet.
 
 ## Example
 
 ```bash
-mxpy localnet prerequisites --configfile my-localnet-config.toml
+mxpy localnet prerequisites
+mxpy localnet prerequisites --configfile localnet-config.json

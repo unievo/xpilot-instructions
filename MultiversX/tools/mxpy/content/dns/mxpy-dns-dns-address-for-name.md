@@ -5,7 +5,7 @@ DNS contract address (bech32) that corresponds to a name.
 ## Usage
 
 ```bash
-mxpy dns dns-address-for-name [name]
+mxpy dns dns-address-for-name name
 ```
 
 ## Parameters

@@ -5,7 +5,7 @@ DNS contract address (hex) that corresponds to a name.
 ## Usage
 
 ```bash
-mxpy dns dns-address-for-name-hex [name]
+mxpy dns dns-address-for-name-hex name
 ```
 
 ## Parameters

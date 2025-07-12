@@ -5,17 +5,19 @@ Start a localnet.
 ## Usage
 
 ```bash
-mxpy localnet start [options]
+mxpy localnet start [--configfile CONFIGFILE] [--stop-after-seconds STOP_AFTER_SECONDS]
 ```
 
 ## Parameters
 
 - `--configfile CONFIGFILE`  
-  (string) Optional configuration file describing the localnet.
+  Optional configuration file describing the localnet.
+
 - `--stop-after-seconds STOP_AFTER_SECONDS`  
-  (integer) Stop the localnet after a given number of seconds. Default: 31536000.
+  Stop the localnet after a given number of seconds (default: 31536000).
 
 ## Example
 
 ```bash
-mxpy localnet start --stop-after-seconds 600 --configfile my-localnet-config.toml
+mxpy localnet start
+mxpy localnet start --configfile localnet-config.json --stop-after-seconds 3600

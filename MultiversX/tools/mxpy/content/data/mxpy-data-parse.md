@@ -12,10 +12,11 @@ mxpy data parse --file FILE --expression EXPRESSION
 
 - `--file FILE`  
   Path of the file to parse.
+
 - `--expression EXPRESSION`  
-  The Python-Dictionary expression to evaluate in order to extract the data.
+  Python-Dictionary expression to evaluate for extracting data.
 
 ## Example
 
 ```bash
-mxpy data parse --file data.json --expression "['key']"
+mxpy data parse --file input.json --expression "{'key': value}"

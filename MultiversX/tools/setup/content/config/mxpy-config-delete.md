@@ -1,21 +1,19 @@
 # mxpy config delete
 
-Deletes a configuration value.
+Deletes a configuration value from the active configuration.
 
 ## Usage
 
 ```bash
-mxpy config delete [name]
+mxpy config delete name
 ```
 
 ## Parameters
 
-- `name` (string)  
+- `name`  
   The name of the configuration entry.
-- `-h, --help`  
-  Show help message and exit.
 
 ## Example
 
 ```bash
-mxpy config delete proxy
+mxpy config delete config_name

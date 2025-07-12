@@ -15,7 +15,7 @@ mxpy tx relay [options]
 - `--relayer-keyfile RELAYER_KEYFILE`  
   JSON keyfile for relayer, if PEM not provided.
 - `--relayer-passfile RELAYER_PASSFILE`  
-  File containing relayer keyfile's password, if keyfile provided. If not provided, you'll be prompted to enter the password.
+  DEPRECATED. Do not use. You'll be prompted to enter the password.
 - `--relayer-ledger`  
   Boolean flag for signing transaction using Ledger (relayer).
 - `--relayer-wallet-index RELAYER_WALLET_INDEX`  

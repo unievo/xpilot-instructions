@@ -5,17 +5,20 @@ Install dependencies or multiversx-sdk modules.
 ## Usage
 
 ```bash
-mxpy deps install {all|golang|testwallets} [--overwrite]
+mxpy deps install {all,golang,testwallets} [--overwrite]
 ```
 
 ## Parameters
 
-- `{all|golang|testwallets}` (string)  
+- `{all,golang,testwallets}`  
   The dependency to install.
-- `--overwrite` (flag)  
-  Whether to overwrite an existing installation.
+
+- `--overwrite`  
+  Overwrite an existing installation.
 
 ## Example
 
 ```bash
+mxpy deps install all
 mxpy deps install golang --overwrite
+mxpy deps install testwallets

@@ -5,15 +5,16 @@ Configure a localnet (required before starting it the first time or after clean)
 ## Usage
 
 ```bash
-mxpy localnet config [options]
+mxpy localnet config [--configfile CONFIGFILE]
 ```
 
 ## Parameters
 
 - `--configfile CONFIGFILE`  
-  (string) Optional configuration file describing the localnet.
+  Optional configuration file describing the localnet.
 
 ## Example
 
 ```bash
-mxpy localnet config --configfile my-localnet-config.toml
+mxpy localnet config
+mxpy localnet config --configfile localnet-config.json

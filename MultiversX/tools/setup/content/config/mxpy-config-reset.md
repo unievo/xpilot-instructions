@@ -10,8 +10,7 @@ mxpy config reset
 
 ## Parameters
 
-- `-h, --help`  
-  Show help message and exit.
+None.
 
 ## Example
 
