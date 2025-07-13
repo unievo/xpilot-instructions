@@ -44,20 +44,22 @@
 
 ## API Endpoints
 
-The following API endpoints provide comprehensive access to MultiversX blockchain data and operations, including account details, balances, NFTs, smart contracts, staking, blocks, transactions, network statistics, economics, and more. Use these endpoints to query, manage, and interact with all major aspects of the MultiversX ecosystem.
+The following API endpoints provide comprehensive access to data and operations, including account details, balances, NFTs, smart contracts, staking, blocks, transactions, network statistics, economics, and more. Use these endpoints to query, manage, and interact with all major aspects of the ecosystem.
 
- - [API Endpoints](./content/api-endpoints/api-endpoints.md)
+- Always read the [API Endpoints details](./content/api-endpoints/api-endpoints.md) for full details on the endpoints and parameter schemas.
 
+## Network Explorer 
 
-## Network Explorer
+The explorer urls are provided for links to display existing data, not for data retrieval. 
+Use the API endpoints for data retrieval.
 
 - Dashboard: {explorerUrl}
-- Accounts : {explorerUrl}/accounts/
+- Accounts (wallet addresses and contract addresses) : {explorerUrl}/accounts/
 - Account (transactions) : {explorerUrl}/accounts/{address}
 - Account tokens : {explorerUrl}/accounts/{address}/tokens
 - Account NFTs : {explorerUrl}/accounts/{address}/nfts
 - Account contracts : {explorerUrl}/accounts/{address}/contracts
-- Applications : {explorerUrl}/applications/
+- Applications (contracts) : {explorerUrl}/applications/
 - Blocks : {explorerUrl}/blocks/
 - Block : {explorerUrl}/blocks/{blockHash}
 - Transactions : {explorerUrl}/transactions/
