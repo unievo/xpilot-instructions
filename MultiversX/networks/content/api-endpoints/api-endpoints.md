@@ -16,13 +16,12 @@ If the value of an attribute is undefined, "" (empty string), null, [ ] (empty a
 Requests that return multiple items will be paginated to 25 items by default.
 For a different number of items or for the next pages use `?from=` and `size=` can be used.
 
-### Getting data count
-To get the total number of items available for a specific endpoint, use available count endpoints. Not all endpoints have a count available.
-If no count endpoint is available and a count is needed, always filter results by specifying a data field preferably of number type (based on the responses schema), in the `/endpoint?fields=` parameter, to limit the data returned.
-When no count endpoint is available, use commands such as `curl -s "/endpoint?fields={field}" | jq '. | length'` or other tools to get the count, applying pagination if necessary. In such cases, always filter the data using the `endpoint/?fields=` parameter.
+### Getting items count
+ - To get the total number of items available for a specific list, use available `count` endpoints. Not all lists have a count available.
+ - If no count endpoint is available and a count is needed, a list endpoint can be used, but always filtering list endpoint results. For filtering, specify a short length data field, preferably of number type (based on the responses schema), in the `/endpoint?fields={field}` parameter, to limit the data returned. Use commands such as `curl -s "/endpoint?fields={field}" | jq '. | length'`, or other tools to get the count, applying pagination if necessary.
 
 ### Endpoints details
-Never act on prior knowledge and always read the following linked files to get all details on the needed endpoints and full parameters schemas.
+Never act on prior knowledge and always read from the following linked files to get all details on the required endpoints and for full parameters schemas.
 
 - [Returns general information about API deployment](mx-api-about-get-endpoints.json)
 - [Returns all accounts/count available on blockchain](mx-api-accounts-get-endpoints.json)
