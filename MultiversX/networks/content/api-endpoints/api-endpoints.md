@@ -64,7 +64,7 @@ Never act on prior knowledge and always read the following linked files to get a
 - [Triggers NFT media/metadata reprocessing for collection owners](mx-api-nfts-post-endpoints.json)
 - [Returns a list/count of nodes of type observer or validator with statuses ("new", "unknown", "waiting", "eligible", "jailed", "queued", "leaving", "inactive", "auction")](mx-api-nodes-get-endpoints.json)
 - [Returns the transactions that are currently in the memory pool](mx-api-pool-get-endpoints.json)
-- [Returns a list/count of all staking providers](mx-api-providers-get-endpoints.json)
+- [Returns a list of all staking providers](mx-api-providers-get-endpoints.json)
 - [Performs a vm query on a given smart contract and returns its results](mx-api-query-post-endpoints.json)
 - [Returns all smart contract results/count available on the blockchain](mx-api-results-get-endpoints.json)
 - [Returns a list of all rounds/count available on blockchain](mx-api-rounds-get-endpoints.json)
