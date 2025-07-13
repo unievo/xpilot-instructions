@@ -1,7 +1,28 @@
 ## API Endpoints
 
-Read the following linked files to get all details on endpoints and full parameters schemas.
-Use the detailed count endpoints to get the number of items available.
+### Fields data filtering
+In order to filter and fetch only specific fields from the response, the fields parameter can be used:
+`/accounts?fields=address,balance` for arrays
+`/economics?fields=price,marketCap` for object
+
+### Extract
+In order to extract a scalar value from an object response, the extract parameter can be used:
+`/economics?extract=price`
+
+### Cleanup
+If the value of an attribute is undefined, "" (empty string), null, [ ] (empty array) the attribute will be omitted.
+
+### Pagination
+Requests that return multiple items will be paginated to 25 items by default.
+For a different number of items or for the next pages use `?from=` and `size=` can be used.
+
+### Getting data count
+To get the total number of items available for a specific endpoint, use available count endpoints. Not all endpoints have a count available.
+If no count endpoint is available and a count is needed, always filter results by specifying a data field preferably of number type (based on the responses schema), in the `/endpoint?fields=` parameter, to limit the data returned.
+When no count endpoint is available, use commands such as `curl -s "/endpoint?fields={field}" | jq '. | length'` or other tools to get the count, applying pagination if necessary. In such cases, always filter the data using the `endpoint/?fields=` parameter.
+
+### Endpoints details
+Never act on prior knowledge and always read the following linked files to get all details on the needed endpoints and full parameters schemas.
 
 - [Returns general information about API deployment](mx-api-about-get-endpoints.json)
 - [Returns all accounts/count available on blockchain](mx-api-accounts-get-endpoints.json)
@@ -34,7 +55,7 @@ Use the detailed count endpoints to get the number of items available.
 - [Returns legacy delegation contract global information](mx-api-delegation-legacy-get-endpoints.json)
 - [Returns general economics information](mx-api-economics-get-endpoints.json)
 - [Returns Network Events](mx-api-events-get-endpoints.json)
-- [Returns a list of all node identities, used to group nodes by the same entity. \"Free-floating\" nodes that do not belong to any identity will also be returned](mx-api-identities-get-endpoints.json)
+- [Returns a list of all node validator identities, used to group nodes by the same entity. "Free-floating" nodes that do not belong to any identity will also be returned](mx-api-identities-get-endpoints.json)
 - [Returns remaining unbonding period for a given bls key](mx-api-keys-get-endpoints.json)
 - [Returns economics details of xExchange](mx-api-mex-get-endpoints.json)
 - [Returns xExchange Pairs, active liquidity pools available on xExchange](mx-api-mex-pairs-get-endpoints.json)
@@ -43,7 +64,7 @@ Use the detailed count endpoints to get the number of items available.
 - [Triggers NFT media/metadata reprocessing for collection owners](mx-api-nfts-post-endpoints.json)
 - [Returns a list/count of nodes of type observer or validator with statuses ("new", "unknown", "waiting", "eligible", "jailed", "queued", "leaving", "inactive", "auction")](mx-api-nodes-get-endpoints.json)
 - [Returns the transactions that are currently in the memory pool](mx-api-pool-get-endpoints.json)
-- [Returns a list/count of all providers](mx-api-providers-get-endpoints.json)
+- [Returns a list/count of all staking providers](mx-api-providers-get-endpoints.json)
 - [Performs a vm query on a given smart contract and returns its results](mx-api-query-post-endpoints.json)
 - [Returns all smart contract results/count available on the blockchain](mx-api-results-get-endpoints.json)
 - [Returns a list of all rounds/count available on blockchain](mx-api-rounds-get-endpoints.json)
