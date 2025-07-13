@@ -1,4 +1,4 @@
-# sc-meta - MultiversX Rust Smart Contract Management Tool Topics
+# sc-meta v0.59.0 - MultiversX Rust Smart Contract Management Tool Topics
 
 MultiversX Rust smart contract management CLI tool.
 

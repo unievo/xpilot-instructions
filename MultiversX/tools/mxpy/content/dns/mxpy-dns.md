@@ -1,0 +1,10 @@
+## DNS
+- [Register DNS name](mxpy-dns-register.md)
+- [Resolve DNS name](mxpy-dns-resolve.md)
+- [Validate DNS name](mxpy-dns-validate-name.md)
+- [Get DNS name hash](mxpy-dns-name-hash.md)
+- [Get registration cost](mxpy-dns-registration-cost.md)
+- [Get DNS contract version](mxpy-dns-version.md)
+- [List DNS contract addresses](mxpy-dns-dns-addresses.md)
+- [Get DNS contract address for name (bech32)](mxpy-dns-dns-address-for-name.md)
+- [Get DNS contract address for name (hex)](mxpy-dns-dns-address-for-name-hex.md)

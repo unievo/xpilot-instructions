@@ -1,0 +1,11 @@
+## Governance
+- [Change the config of the contract](mxpy-governance-change-config.md)
+- [Claim the accumulated fees](mxpy-governance-claim-accumulated-fees.md)
+- [Clear ended proposals](mxpy-governance-clear-ended-proposals.md)
+- [Close a governance proposal](mxpy-governance-close-proposal.md)
+- [Get the config of the governance contract](mxpy-governance-get-config.md)
+- [Get info about a delegated vote](mxpy-governance-get-delegated-vote-info.md)
+- [Get info about a proposal](mxpy-governance-get-proposal.md)
+- [Get the voting power of a user](mxpy-governance-get-voting-power.md)
+- [Create a new governance proposal](mxpy-governance-propose.md)
+- [Vote for a governance proposal](mxpy-governance-vote.md)

@@ -11,13 +11,15 @@ mxpy validator-wallet verify-message-signature --pubkey PUBKEY --message MESSAGE
 ## Parameters
 
 - `--pubkey PUBKEY`  
-  (string) The hex string representing the validator's public key.
+  Hex string representing the validator's public key.
+
 - `--message MESSAGE`  
-  (string) The previously signed message (readable text, as it was signed).
+  Previously signed message (readable text, as it was signed).
+
 - `--signature SIGNATURE`  
-  (string) The signature in hex format.
+  Signature in hex format.
 
 ## Example
 
 ```bash
-mxpy validator-wallet verify-message-signature --pubkey 0123abcd... --message "hello" --signature 89ef...
+mxpy validator-wallet verify-message-signature --pubkey abcd1234 --message "hello world" --signature deadbeef

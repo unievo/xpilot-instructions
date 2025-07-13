@@ -11,13 +11,16 @@ mxpy validator-wallet sign-message --message MESSAGE --pem PEM [--index INDEX]
 ## Parameters
 
 - `--message MESSAGE`  
-  (string) The message you want to sign.
+  The message you want to sign.
+
 - `--pem PEM`  
-  (string) The path to a validator pem file.
+  Path to a validator pem file.
+
 - `--index INDEX`  
-  (integer, optional) The index of the validator in case the file contains multiple validators (default: 0).
+  Index of the validator if the file contains multiple validators (default: 0).
 
 ## Example
 
 ```bash
-mxpy validator-wallet sign-message --message "hello" --pem validator.pem --index 0
+mxpy validator-wallet sign-message --message "hello world" --pem validator.pem
+mxpy validator-wallet sign-message --message "test" --pem validator.pem --index 1

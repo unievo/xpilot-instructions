@@ -11,11 +11,13 @@ mxpy validator-wallet convert --infile INFILE [--index INDEX]
 ## Parameters
 
 - `--infile INFILE`  
-  (string) The pem file of the wallet.
+  PEM file of the wallet.
+
 - `--index INDEX`  
-  (integer, optional) The index of the validator in case the file contains multiple validators (default: 0).
+  Index of the validator if the file contains multiple validators (default: 0).
 
 ## Example
 
 ```bash
-mxpy validator-wallet convert --infile validator.pem --index 0
+mxpy validator-wallet convert --infile validator.pem
+mxpy validator-wallet convert --infile validator.pem --index 1

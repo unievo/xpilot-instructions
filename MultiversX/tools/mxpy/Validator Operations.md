@@ -1,4 +1,4 @@
-# mxpy - Validators Tools Topics
+# mxpy v11.0.0 - Validators Tools Topics
 
 ## Validator
 - [Stake](./content/validator/mxpy-validator-stake.md)

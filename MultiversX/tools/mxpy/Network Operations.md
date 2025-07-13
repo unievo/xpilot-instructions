@@ -1,5 +1,13 @@
-# mxpy - Network Operations Topics
+# mxpy v11.0.0 - Network Operations Topics
 
+## Get Operations
+- [Get info about an account.](./content/get/mxpy-get-account.md)
+- [Get the network configuration.](./content/get/mxpy-get-network-config.md)
+- [Get the network status.](./content/get/mxpy-get-network-status.md)
+- [Get a specific storage entry (key-value pair) of an account.](./content/get/mxpy-get-storage-entry.md)
+- [Get the storage (key-value pairs) of an account.](./content/get/mxpy-get-storage.md)
+- [Get a token of an account.](./content/get/mxpy-get-token.md)
+- [Get a transaction from the network.](./content/get/mxpy-get-transaction.md)
 ## Wallet
 - [Create network specific wallets](./content/wallet/mxpy-wallet-new.md)
 - [Convert wallet format](./content/wallet/mxpy-wallet-convert.md)
@@ -25,12 +33,9 @@
 ## Faucet
 - [Request native token funds](./content/faucet/mxpy-faucet-request.md)
 ## DNS
-- [Register DNS name](./content/dns/mxpy-dns-register.md)
-- [Resolve DNS name](./content/dns/mxpy-dns-resolve.md)
-- [Validate DNS name](./content/dns/mxpy-dns-validate-name.md)
-- [Get DNS name hash](./content/dns/mxpy-dns-name-hash.md)
-- [Get registration cost](./content/dns/mxpy-dns-registration-cost.md)
-- [Get DNS contract version](./content/dns/mxpy-dns-version.md)
-- [List DNS contract addresses](./content/dns/mxpy-dns-dns-addresses.md)
-- [Get DNS contract address for name (bech32)](./content/dns/mxpy-dns-dns-address-for-name.md)
-- [Get DNS contract address for name (hex)](./content/dns/mxpy-dns-dns-address-for-name-hex.md)
+- [DNS operations](./content/dns/mxpy-dns.md)
+## Governance
+- [Governance operations](./content/governance/mxpy-governance.md)
+## Multisig
+- [Multisig operations](./content/multisig/mxpy-multisig.md)
+
