@@ -5,7 +5,7 @@ Asks the contract for its version.
 ## Usage
 
 ```bash
-mxpy dns version [--shard-id SHARD_ID] [--all] [--proxy PROXY]
+mxpy dns version [--shard-id SHARD_ID] [--all] --proxy PROXY
 ```
 
 ## Parameters
@@ -22,5 +22,4 @@ mxpy dns version [--shard-id SHARD_ID] [--all] [--proxy PROXY]
 ## Example
 
 ```bash
-mxpy dns version
-mxpy dns version --all --proxy https://gateway.multiversx.com
+mxpy dns version --proxy https://gateway.multiversx.com

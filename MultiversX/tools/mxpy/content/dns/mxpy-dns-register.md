@@ -5,7 +5,7 @@ Send a register transaction to the appropriate DNS contract from given user and 
 ## Usage
 
 ```bash
-mxpy dns register --name NAME --sender SENDER [options]
+mxpy dns register [options]
 ```
 
 ## Parameters
@@ -106,5 +106,5 @@ mxpy dns register --name NAME --sender SENDER [options]
 ## Example
 
 ```bash
-mxpy dns register --name my_name --sender alice --send
-mxpy dns register --name my_name --sender alice --simulate --outfile result.json
+mxpy dns register --name my_name --proxy proxy --sender alice --send
+mxpy dns register --name my_name --proxy proxy --sender alice --simulate --outfile result.json

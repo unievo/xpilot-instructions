@@ -5,7 +5,7 @@ Asks one of the DNS contracts to validate a name. Useful before registering it.
 ## Usage
 
 ```bash
-mxpy dns validate-name name [--shard-id SHARD_ID] [--proxy PROXY]
+mxpy dns validate-name name [--shard-id SHARD_ID] --proxy PROXY
 ```
 
 ## Parameters
@@ -22,5 +22,4 @@ mxpy dns validate-name name [--shard-id SHARD_ID] [--proxy PROXY]
 ## Example
 
 ```bash
-mxpy dns validate-name my_name
-mxpy dns validate-name my_name --shard-id 1 --proxy https://gateway.multiversx.com
+mxpy dns validate-name my_name --proxy https://gateway.multiversx.com
