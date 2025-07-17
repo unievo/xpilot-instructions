@@ -50,26 +50,26 @@ The endpoints include account management, token, collections and NFT operations,
 
 ## Network Explorer 
 
-The explorer urls are provided for links to display existing data, not for data retrieval. 
+The explorer urls are provided as link references to display existing data, not for data retrieval. 
 Use the API endpoints for data retrieval.
 
-- Dashboard: {explorerUrl}
-- Accounts (wallet addresses and contract addresses) : {explorerUrl}/accounts/
-- Account (transactions) : {explorerUrl}/accounts/{address}
-- Account tokens : {explorerUrl}/accounts/{address}/tokens
-- Account NFTs : {explorerUrl}/accounts/{address}/nfts
-- Account contracts : {explorerUrl}/accounts/{address}/contracts
-- Applications (contracts) : {explorerUrl}/applications/
-- Blocks : {explorerUrl}/blocks/
-- Block : {explorerUrl}/blocks/{blockHash}
-- Transactions : {explorerUrl}/transactions/
-- Transaction : {explorerUrl}/transactions/{txHash}
-- Tokens : {explorerUrl}/tokens/
-- Token : {explorerUrl}/tokens/{identifier}
-- Collections : {explorerUrl}/collections/
-- Collection : {explorerUrl}/collections/{collection}
-- NFTs : {explorerUrl}/nfts/
-- NFT : {explorerUrl}/nfts/{nftIdentifier}
-- Validators : {explorerUrl}/validators/
-- Validator : {explorerUrl}/identities/{identity}
-- Analytics : {explorerUrl}/analytics/
+- Dashboard: {explorer}
+- Accounts (wallet addresses and contract addresses) : {explorer}/accounts/
+- Account (transactions) : {explorer}/accounts/{address}
+- Account tokens : {explorer}/accounts/{address}/tokens
+- Account NFTs : {explorer}/accounts/{address}/nfts
+- Account contracts : {explorer}/accounts/{address}/contracts
+- Applications (contracts) : {explorer}/applications/
+- Blocks : {explorer}/blocks/
+- Block : {explorer}/blocks/{blockHash}
+- Transactions : {explorer}/transactions/
+- Transaction : {explorer}/transactions/{txHash}
+- Tokens : {explorer}/tokens/
+- Token : {explorer}/tokens/{identifier}
+- Collections : {explorer}/collections/
+- Collection : {explorer}/collections/{collection}
+- NFTs : {explorer}/nfts/
+- NFT : {explorer}/nfts/{nftIdentifier}
+- Validators : {explorer}/validators/
+- Validator : {explorer}/identities/{identity}
+- Analytics : {explorer}/analytics/
