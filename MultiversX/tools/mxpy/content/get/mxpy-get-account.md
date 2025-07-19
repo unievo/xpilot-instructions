@@ -5,7 +5,7 @@ Get info about an account.
 ## Usage
 
 ```bash
-mxpy get account [--alias ALIAS] [--address ADDRESS] [--proxy PROXY] [--balance]
+mxpy get account [--alias ALIAS] [--address ADDRESS] --proxy PROXY [--balance]
 ```
 
 ## Parameters
@@ -26,4 +26,4 @@ mxpy get account [--alias ALIAS] [--address ADDRESS] [--proxy PROXY] [--balance]
 
 ```bash
 mxpy get account --address erd1abc... --proxy https://devnet-gateway.multiversx.com
-mxpy get account --alias alice --balance
+mxpy get account --alias alice --balance --proxy https://devnet-gateway.multiversx.com

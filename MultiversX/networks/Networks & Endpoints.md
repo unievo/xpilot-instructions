@@ -46,7 +46,8 @@
 
 The endpoints include account management, token, collections and NFT operations, staking, delegation, smart contracts, transactions, transfers, blocks, rounds, shards, nodes, validators, identities, staking providers, network events, economics, xExchange details, app configurations, statistics, memory pool, VM queries.
 
-- Always read the [API Endpoints details](./content/api-endpoints/api-endpoints.md) for full details on the endpoints and parameter schemas.
+Never act on prior knowledge and always read from the following linked files to get all details on the required endpoints and for full parameters schemas.
+- [API Endpoints details](./content/api-endpoints/api-endpoints.md) 
 
 ## Network Explorer 
 
