@@ -61,8 +61,8 @@ Detailed information linked to files in the content subdirectory, can includes e
 
 ## xPilot Integration
 
-xPilot automatically retrieves the contents of this repository using the `/Get Instructions` command. Table of contents files related to current tasks can be quickly activated into context from the Instructions menu, to provide an overview of available information. Detailed content files are accessed on demand.
+xPilot automatically retrieves the contents of this repository using the `/Git Instructions` command. Table of contents files related to current tasks can be quickly activated into context from the Instructions menu, to provide an overview of available information. Detailed content files are accessed on demand.
 
 ## Contribution
 
-This library is open to anyone for contributing and expanding on any topics. Fork the repository, add your changes and submit a pull request. You can create, edit and test your PR locally using xPilot, using `/Get Instructions {your-repo-fork.git}`, to retrieve the forked repo version into your workspace.
+This library is open to anyone for contributing and expanding on any topics.
