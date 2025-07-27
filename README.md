@@ -17,7 +17,6 @@ MultiversX/
 │   │   ├── Network Operations.md           <-- Table of contents file
 │   │   ├── Validator Operations.md         <-- Table of contents file
 │   │   └── content/                        <-- Content details directory
-│   │       ├── mxpy-install-upgrade.md     <-- Subject instructions file
 │   │       ├── tx/                         <-- Subject instructions directory
 │   │       │   ├── mxpy-tx-new.md          <-- Subject instructions file
 │   │       │   ├── mxpy-tx-send.md         <-- Subject instructions file
@@ -34,6 +33,8 @@ MultiversX/
 │   ├── setup/
 │   │   ├── Tools Setup.md
 │   │   └── content/
+│   │       ├── mxpy-install-upgrade.md
+│   │       ├── sc-meta-install-upgrade.md
 │   │       ├── ...
 │   ...     ...
 │

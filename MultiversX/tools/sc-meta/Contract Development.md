@@ -2,9 +2,6 @@
 
 MultiversX Rust smart contract management CLI tool.
 
-## Setup
-- [Install or upgrade sc-meta](./content/sc-meta-install-upgrade.md)
-
 ## Top-level Options
 - `-h,` Show help message
 - `-V,` Show version number
